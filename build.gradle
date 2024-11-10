@@ -29,6 +29,13 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+	// Database 및 Jpa 연동
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'jakarta.validation:jakarta.validation-api'
+	runtimeOnly 'com.mysql:mysql-connector-j'
+	implementation 'com.mysql:mysql-connector-j'
+
 }
 
 tasks.named('test') {
