@@ -1,7 +1,12 @@
 package com.community.sample.post.service;
 
 import com.community.sample.post.dto.PostRequest;
+import com.community.sample.post.dto.PostResponse;
+
+import java.util.List;
 
 public interface PostService {
-    public long createPost(PostRequest request);
+    long createPost(PostRequest request);
+
+    List<PostResponse> getPostList();
 }
